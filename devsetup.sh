@@ -26,7 +26,7 @@ read GIT_NAME
 echo -n "Enter your Git Email > "
 read GIT_EMAIL
 git config --global user.name $GIT_NAME
-git config --global user.email $GIT_EMAL
+git config --global user.email $GIT_EMAIL
 
 # SCREEN
 echo "~~~ INSTALLING SCREEN ~~~"
@@ -37,13 +37,14 @@ echo "~~~ INSTALLING HTOP ~~~"
 sudo apt-get install htop
 
 # Python RELATED STUFF
-echo "~~~ INSTALLING Python Stuff pip virtualenv virtualenvwrapper ~~~"
+echo "~~~ INSTALLING Python Stuff pip virtualenv virtualenvwrapper fabric ~~~"
 sudo apt-get install python-software-properties python g++ make
 sudo apt-get install python-setuptools
 sudo easy_install pip
 sudo pip install setuptools --no-use-wheel --upgrade
 sudo pip install virtualenv
 sudo pip install virtualenvwrapper
+sudo pip install fabric
 
 # NODE.JS
 echo "~~~ INSTALLING NODEJS ~~~"
@@ -75,7 +76,6 @@ sudo gdebi rstudio-server-0.98.490-i386.deb
 
 # INSTALL MongoDB
 echo "~~~ INSTALLING MONGODB ~~~"
-echo "******** Installing MongoDB ********"
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10 > /dev/null
 echo 'deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen' | sudo tee /etc/apt/sources.list.d/mongodb.list
 sudo apt-get update > /dev/null
