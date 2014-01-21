@@ -10,7 +10,7 @@ echo "This script will install Screen, Htop, Git, Python tools, Node.js, R, Emac
 # ToDo Select packages or sections here
 #echo -n "Install all / Select packages [a/s] a > "
 #read OPTION
-    
+
 # APT-GET UPDATE
 sudo apt-get update > /dev/null
 
@@ -69,10 +69,11 @@ sudo apt-get install gdebi-core
 sudo apt-get install libapparmor1
 if [ $SYS == "x86_64" ]; then
     wget http://download2.rstudio.org/rstudio-server-0.98.490-amd64.deb
+    sudo gdebi rstudio-server-0.98.490-amd64.deb
 else
     wget http://download2.rstudio.org/rstudio-server-0.98.490-i386.deb
+    sudo gdebi rstudio-server-0.98.490-i386.deb
 fi
-sudo gdebi rstudio-server-0.98.490-i386.deb
 
 # INSTALL MongoDB
 echo "~~~ INSTALLING MONGODB ~~~"
