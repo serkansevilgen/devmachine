@@ -52,6 +52,10 @@ sudo add-apt-repository ppa:chris-lea/node.js
 sudo apt-get update > /dev/null
 sudo apt-get install nodejs
 
+npm install -g express-generator
+npm install forever -g
+npm install jshint -g
+
 # R
 echo "~~~ INSTALLING R ~~~"
 sudo apt-get install r-base
