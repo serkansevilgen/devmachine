@@ -4,18 +4,18 @@ Be ready to work in a couple of minutes on a freshly installed Ubuntu 12.04
 
 This script will install packages below
 
-Screen 
+Screen
 Htop
-Curl 
+Curl
 Git
 
-pip 
-virtualenv 
-virtıalenvwrapper 
-fabric)
+pip
+virtualenv
+virtıalenvwrapper
+fabric
 
-Node.js 
-R 
+Node.js
+R
 
 Emacs
 RStudio Server
