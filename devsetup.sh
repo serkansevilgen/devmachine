@@ -94,3 +94,6 @@ wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 # AWS CLI
 echo "~~~ INSTALLING AWS CLI ~~~"
 pip install awscli
+
+# ab (Apache benchmark tool)
+sudo apt-get install apache2-utils
