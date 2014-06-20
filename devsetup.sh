@@ -36,6 +36,9 @@ sudo apt-get install screen
 echo "~~~ INSTALLING HTOP ~~~"
 sudo apt-get install htop
 
+# NETHOGS
+sudo apt-get install nethogs
+
 # Python RELATED STUFF
 echo "~~~ INSTALLING Python Stuff pip virtualenv virtualenvwrapper fabric ~~~"
 sudo apt-get install python-software-properties python g++ make

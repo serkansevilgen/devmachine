@@ -1,26 +1,26 @@
-#DEVELOPER MACHINE INSTALLER#
+#Developer Machine Installer#
 
-Be ready to work in a couple of minutes on a freshly installed Ubuntu 12.04
+A simple script to install several tools to start coding on a freshly installed Ubuntu 12.04
 
 This script will install packages below
 
-Screen
-Htop
-Curl
+Screen  
+Htop  
+Nethogs  
+Curl  
 Git
-
-pip
-virtualenv
-virtıalenvwrapper
-fabric
-
+ab  
+pip  
+virtualenv  
+virtıalenvwrapper  
+fabric  
 Node.js
-R
-
-Emacs
-RStudio Server
-
-MongoDB
-
-Heroku Toolbelt
-AWS Cli
+jshint  
+forever  
+express  
+R  
+RStudio Server  
+Emacs 24  
+MongoDB  
+Heroku Toolbelt  
+AWS Cli  
