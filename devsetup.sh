@@ -14,8 +14,10 @@ echo "This script will install Screen, Htop, Git, Python tools, Node.js, R, Emac
 # APT-GET UPDATE
 sudo apt-get update > /dev/null
 
+echo "~~~ INSTALLING SCREEN, CURL, HTOP, NETHOGS, GIT, AB ~~~"
+
 # CURL
-echo "~~~ INSTALLING CURL ~~~"
+
 sudo apt-get install -y curl
 
 # GIT
@@ -29,18 +31,23 @@ git config --global user.name $GIT_NAME
 git config --global user.email $GIT_EMAIL
 
 # SCREEN
-echo "~~~ INSTALLING SCREEN ~~~"
 sudo apt-get install screen 
 
 # HTOP
-echo "~~~ INSTALLING HTOP ~~~"
 sudo apt-get install htop
 
 # NETHOGS
 sudo apt-get install nethogs
 
+# ab (Apache benchmark tool)
+sudo apt-get install apache2-utils
+
+echo "~~~ INSTALLING NGINX ~~~"
+# Nginx
+sudo apt-get install nginx
+
 # Python RELATED STUFF
-echo "~~~ INSTALLING Python Stuff pip virtualenv virtualenvwrapper fabric ~~~"
+echo "~~~ pip virtualenv virtualenvwrapper fabric ~~~"
 sudo apt-get install python-software-properties python g++ make
 sudo apt-get install python-setuptools
 sudo easy_install pip
@@ -50,7 +57,7 @@ sudo pip install virtualenvwrapper
 sudo pip install fabric
 
 # NODE.JS
-echo "~~~ INSTALLING NODEJS ~~~"
+echo "~~~ INSTALLING NODEJS express forever jshint ~~~"
 sudo add-apt-repository ppa:chris-lea/node.js
 sudo apt-get update > /dev/null
 sudo apt-get install nodejs
@@ -60,18 +67,10 @@ sudo npm install forever -g
 sudo npm install jshint -g
 
 # R
-echo "~~~ INSTALLING R ~~~"
+echo "~~~ INSTALLING R, RSTUDIO SERVER~~~"
 sudo apt-get install r-base
 
-# EMACS24
-echo "~~~ INSTALLING EMACS ~~~"
-# https://launchpad.net/~cassou/+archive/emacs
-sudo add-apt-repository -y ppa:cassou/emacs
-sudo apt-get -qq update > /dev/null
-sudo apt-get install -y emacs24-nox emacs24-el emacs24-common-non-dfsg
-
 # RSTUDIO SERVER
-echo "~~~ INSTALLING RSTUDIO SERVER ~~~"
 sudo apt-get install gdebi-core
 sudo apt-get install libapparmor1
 if [ $SYS == "x86_64" ]; then
@@ -81,6 +80,14 @@ else
     wget http://download2.rstudio.org/rstudio-server-0.98.490-i386.deb
     sudo gdebi rstudio-server-0.98.490-i386.deb
 fi
+
+# EMACS24
+echo "~~~ INSTALLING EMACS ~~~"
+# https://launchpad.net/~cassou/+archive/emacs
+sudo add-apt-repository -y ppa:cassou/emacs
+sudo apt-get -qq update > /dev/null
+sudo apt-get install -y emacs24-nox emacs24-el emacs24-common-non-dfsg
+
 
 # INSTALL MongoDB
 echo "~~~ INSTALLING MONGODB ~~~"
@@ -97,6 +104,3 @@ wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 # AWS CLI
 echo "~~~ INSTALLING AWS CLI ~~~"
 pip install awscli
-
-# ab (Apache benchmark tool)
-sudo apt-get install apache2-utils

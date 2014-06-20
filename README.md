@@ -3,18 +3,19 @@
 A simple script to install several tools to start coding on a freshly installed Ubuntu 12.04
 
 This script will install packages below
-
+```
 Screen  
 Htop  
 Nethogs  
 Curl  
-Git
+Git  
 ab  
 pip  
 virtualenv  
-virtıalenvwrapper  
+virtualenvwrapper  
 fabric  
-Node.js
+Nginx  
+Node.js  
 jshint  
 forever  
 express  
@@ -24,3 +25,4 @@ Emacs 24
 MongoDB  
 Heroku Toolbelt  
 AWS Cli  
+```
