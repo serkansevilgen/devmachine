@@ -104,3 +104,8 @@ wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 # AWS CLI
 echo "~~~ INSTALLING AWS CLI ~~~"
 pip install awscli
+
+# ORACLE JAVA 8
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt-get update
+sudo apt-get install oracle-java8-installer
