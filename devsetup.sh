@@ -96,6 +96,9 @@ echo 'deb http://downloads-distro.mongodb.org/repo/ubuntu-upstart dist 10gen' | 
 sudo apt-get update > /dev/null
 sudo apt-get install mongodb-org
 
+# REDIS
+sudo apt-get install redis-server
+
 # INSTALL HEROKU TOOLBELT
 echo "~~~ INSTALLING HEROKU TOOLBELT ~~~"
 # https://toolbelt.heroku.com/debian
