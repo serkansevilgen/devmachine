@@ -1,4 +1,8 @@
-#!/bin/bash
+
+
+
+
+ #!/bin/bash
 
 echo "YOUR SYSTEM"
 cat /etc/*-release
@@ -97,7 +101,13 @@ sudo apt-get update > /dev/null
 sudo apt-get install mongodb-org
 
 # REDIS
+echo "~~~ INSTALLING REDIS ~~~"
 sudo apt-get install redis-server
+
+# MYSQL
+echo "~~~ INSTALLING MYSQL ~~~"
+sudo apt-get update
+sudo apt-get install mysql-server
 
 # INSTALL HEROKU TOOLBELT
 echo "~~~ INSTALLING HEROKU TOOLBELT ~~~"

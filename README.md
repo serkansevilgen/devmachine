@@ -24,6 +24,7 @@ RStudio Server
 Emacs 24  
 MongoDB
 Redis  
+MySQL  
 Heroku Toolbelt  
 AWS Cli
 Oracle Java 8  
