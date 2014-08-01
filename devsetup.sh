@@ -18,10 +18,9 @@ echo "This script will install Screen, Htop, Git, Python tools, Node.js, R, Emac
 # APT-GET UPDATE
 sudo apt-get update > /dev/null
 
-echo "~~~ INSTALLING SCREEN, CURL, HTOP, NETHOGS, GIT, AB ~~~"
+echo "~~~ INSTALLING SCREEN, TMUX, CURL, HTOP, NETHOGS, GIT, AB ~~~"
 
 # CURL
-
 sudo apt-get install -y curl
 
 # GIT
@@ -36,6 +35,7 @@ git config --global user.email $GIT_EMAIL
 
 # SCREEN
 sudo apt-get install screen 
+sudo apt-get install tmux 
 
 # HTOP
 sudo apt-get install htop
@@ -116,9 +116,10 @@ wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
 
 # AWS CLI
 echo "~~~ INSTALLING AWS CLI ~~~"
-pip install awscli
+sudo pip install awscli
 
 # ORACLE JAVA 8
+echo "~~~ INSTALLING ORACLE JAVA 8 ~~~"
 sudo add-apt-repository ppa:webupd8team/java
 sudo apt-get update
 sudo apt-get install oracle-java8-installer
